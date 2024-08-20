@@ -1,9 +1,16 @@
+import './styles/global.css';
 
-function App() {
-  
+import { Habit } from './components/Habit';
+
+function app() {
   return (
-    <h1>Hello World</h1>
-  )
+    <div>
+      <Habit completed={3}/>
+      <Habit completed={10}/>
+      <Habit completed={20}/>
+      <Habit completed={30}/>
+    </div>
+  );
 }
 
-export default App
+export default app;
